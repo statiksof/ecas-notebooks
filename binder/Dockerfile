@@ -2,8 +2,6 @@ FROM jupyter/base-notebook
 
 USER root
 
-WORKDIR /home/jovyan/work
-
 RUN conda install -c conda-forge --quiet --yes \
     basemap=1.1.0=py36_4 \
     numpy \
