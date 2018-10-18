@@ -1,10 +1,9 @@
-# ecas-notebooks
+# ECAS Notebooks
 
-Try Ophidia on Binder
+Try ECAS on Binder
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/statiksof/ecas-notebooks.git/master)
 
 ```
-username: oph-test
-password: abcd
+ask us for usernamae and password
 ```
