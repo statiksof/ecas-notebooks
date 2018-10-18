@@ -6,4 +6,3 @@ dependencies:
        - pyophidia
   - numpy
   - matplotlib
-  - pyophidia
