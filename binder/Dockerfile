@@ -11,3 +11,5 @@ RUN  apt-get update &&\
      apt-get install -y libgl1-mesa-glx libx11-xcb1 qt5-default
 RUN chown -R jovyan:users /home/jovyan/work/
 
+WORKDIR ~/home/jovyan/work
+
