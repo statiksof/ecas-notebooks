@@ -2,7 +2,7 @@ name: ecas-env
 channels:
   - conda-forge
 dependencies:
-  - python
+  - python==3.5
   - numpy
   - matplotlib
   - pyophidia
