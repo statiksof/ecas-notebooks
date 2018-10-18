@@ -1,5 +1,7 @@
 FROM jupyter/base-notebook
 
+USER root
+
 # create user with a home directory
 ARG NB_USER
 ARG NB_UID
@@ -19,7 +21,6 @@ RUN conda install -c conda-forge --quiet --yes \
     pyophidia && \
     conda clean -tipsy 
 
-USER root
 RUN  apt-get update &&\
 
      apt-get install -y libgl1-mesa-glx libx11-xcb1 qt5-default
