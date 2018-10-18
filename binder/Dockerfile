@@ -17,4 +17,6 @@ RUN  apt-get update &&\
 
 ADD binder/Frost+Days.ipynb ~/home/jovyan/work/
 
+ADD . ~/home/jovyan/work
+
 RUN chown -R jovyan:users /home/jovyan/work/
