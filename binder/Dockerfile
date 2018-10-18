@@ -13,8 +13,9 @@ RUN  apt-get update &&\
 
      apt-get install -y libgl1-mesa-glx libx11-xcb1 qt5-default
 
-ADD binder/Frost+Days.ipynb ~/home/jovyan/work/
+EXPOSE 80/tcp
+EXPOSE 80/udp 
 
-ADD . ~/home/jovyan/work
+COPY binder/Frost+Days.ipynb ~/home/jovyan/work/
 
 RUN chown -R jovyan:users /home/jovyan/work/
