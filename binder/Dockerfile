@@ -9,12 +9,16 @@ RUN conda install -c conda-forge --quiet --yes \
     pyophidia && \
     conda clean -tipsy 
 
-RUN  apt-get update &&\
+RUN  apt-get install -y iputils-ping 
 
-     apt-get install -y libgl1-mesa-glx libx11-xcb1 qt5-default
+EXPOSE 8080/tcp
+EXPOSE 8080/udp 
 
 EXPOSE 80/tcp
-EXPOSE 80/udp 
+EXPOSE 80/udp
+
+EXPOSE 11732/tcp
+EXPOSE 11732/udp 
 
 COPY binder/Frost+Days.ipynb ~/home/jovyan/work/
 
