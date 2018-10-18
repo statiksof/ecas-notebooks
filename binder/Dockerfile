@@ -9,7 +9,8 @@ RUN conda install -c conda-forge --quiet --yes \
     pyophidia && \
     conda clean -tipsy 
 
-RUN  apt-get install -y iputils-ping 
+RUN  apt-get update && \
+     apt-get install -y iputils-ping 
 
 EXPOSE 8080/tcp
 EXPOSE 8080/udp 
