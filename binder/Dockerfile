@@ -9,7 +9,7 @@ USER root
 RUN  apt-get update &&\
 
      apt-get install -y libgl1-mesa-glx libx11-xcb1 qt5-default
-COPY ../notebooks/Frost+Days.ipynb ~/home/jovyan/work/
+COPY Frost+Days.ipynb ~/home/jovyan/work/
 
 RUN chown -R jovyan:users /home/jovyan/work/
 
